@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <title>LINK</title>
+</head>
+<body>
+    <h1>Thẻ Link - Phần từ Target</h1>
+    <p>Phần tử <span>Target</span> trong thẻ link để mở đường link đó ra một cửa sổ mới hoặc cửa sổ hiện tại</p>
+    <p>Thuộc tính này <span>target</span> có thể có một trong các giá trị sau:
+        <ul>
+            <li><span>_self-</span> Mặc định. Mở tài liệu trong cùng cửa sổ/tab mà bạn đã nhấp chuột vào.</li>
+            <li><span>_blank-</span> Mở tài liệu trong một cửa sổ hoặc tab mới.</li>
+            <li><span>_parent-</span> Mở tài liệu trong khung cha</li>
+            <li><span>_top-</span> Mở tài liệu ở chế độ toàn màn hình cửa sổ</li>
+        </ul>
+    </p>
+    <h1>Liên kết HTML - Sử dụng hình ảnh làm liên kết</h1>
+    <p>Để sử dụng hình ảnh để làm link thì dùng thẻ <span>&lt;img&gt</span>; bên trong <span>&lt;a&gt;</span> </p>
+    <p>Example:</p>
+    <p><code>&lt;<span>a</span> <span style="color: green">href</span>=&quot;/index.html&quot;&gt;&lt;<span>img</span> <span style="color: green">src=</span>&quot;/img/HOME.avif&quot; <span style="color: green">alt=</span>&quot;HOME&quot; <span style="color: green">style=</span>&quot;width: 25%;height:25%;&quot;&gt;&lt;<span>/a</span>&gt;</code></p>
+    <p>Kết quả:</p>
+    <a href="/index.html"><img src="/img/HOME.avif" alt="HTML Basic" title="HTML Basic" target="_blank" style="width: 10%;height: 10%;"></a>
+    <h1>Link to an Email Address, Tel</h1>
+    <p>Sử dụng <mark>mailto:</mark> và <mark>tel:</mark> để dẫn đến email.</p>
+    <p>&lt;a href=&quot;mailto:someone@example.com&quot;&gt;Send email&lt;/a&gt;</p>
+    <p>&lt;a href=&quot;tel:0975679021&quot;&gt;Call me&lt;/a&gt;</p>
+    <p>Để thêm CC, BCC, Tiêu đề, nội dung vào email ta làm theo mẫu.</p>
+    <p>&lt;p&gt;&lt;a href=&quot;mailto:someone@example.com?CC=abc@yahoo.com?BCC=123@gmail.com &amp;subject=TEST &amp;body= làm mẫu&quot;&gt;Send email&lt;/a&gt;&lt;/p&gt;</p>
+    <hr />
+    <a href="https://www.w3schools.com/html/html_links.asp" target="_blank"
+      >Xem thêm chi tiết tại đây</a
+    >
+</body>
+</html>
