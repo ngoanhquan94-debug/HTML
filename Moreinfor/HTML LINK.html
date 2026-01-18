@@ -7,11 +7,31 @@
         span{
             color: red;
         }
+        a#Link1:link{
+            color: green;
+            text-decoration: none;
+            background-color: pink;
+            padding: 15px 25px;
+            text-align: center;
+            display: inline-block;
+            border: black; 
+        }
+        a#Link1:visited{
+            color: blue;
+        }
+        a#Link1:hover{
+            color:red;
+            background-color: green;
+        }
+        a#Link1:active{
+            color:yellow;
+            text-decoration: underline;
+        }
     </style>
     <title>LINK</title>
 </head>
 <body>
-    <h1>Thẻ Link - Phần từ Target</h1>
+    <h1 id="C1">Thẻ Link - Phần từ Target</h1>
     <p>Phần tử <span>Target</span> trong thẻ link để mở đường link đó ra một cửa sổ mới hoặc cửa sổ hiện tại</p>
     <p>Thuộc tính này <span>target</span> có thể có một trong các giá trị sau:
         <ul>
@@ -34,8 +54,8 @@
     <p>Để thêm CC, BCC, Tiêu đề, nội dung vào email ta làm theo mẫu.</p>
     <p>&lt;p&gt;&lt;a href=&quot;mailto:someone@example.com?CC=abc@yahoo.com?BCC=123@gmail.com &amp;subject=TEST &amp;body= làm mẫu&quot;&gt;Send email&lt;/a&gt;&lt;/p&gt;</p>
     <hr />
-    <a href="https://www.w3schools.com/html/html_links.asp" target="_blank"
-      >Xem thêm chi tiết tại đây</a
-    >
+    <a id="Link1" href="https://www.w3schools.com/html/html_links.asp" target="_blank"
+      >Xem thêm chi tiết tại đây</a><br>
+    <p><a href="#C1">Thẻ Link - Phần từ Target</a></p>
 </body>
 </html>
