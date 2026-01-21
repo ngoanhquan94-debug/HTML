@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Bản đồ hình ảnh</title>
+</head>
+<body>
+<H1>Image Maps</H1>
+<div>
+<p>Để tạo một ảnh mà khi kích vào các đồ vật trên ảnh chuyển đến 1 đường dẫn khác ta dùng thẻ &lt;map&gt;.</p>
+<p>Trong thẻ &lt;map&gt; sẽ có chứa nhiều thẻ &lt;area&gt;. </p>
+</div>
+<div>
+<p>Example:</p>
+<p><code>&lt;<span class="mau1">img</span> src=&quot;/img/BANH.png&quot; alt=&quot;banh&quot; <span class="mau2">usemap=</span><span class="mau3">&quot;#CAFE&quot;</span> style=&quot;width: 350px; height: 250px;&quot;&gt;</code></p>
+<pre><code>&lt;<span class="mau1">map</span> <span class="mau2">name=</span><span class="mau3">&quot;CAFE&quot;&gt;</span>
+    &lt;<span class="mau1">area</span> <span class="mau2">shape=</span><span class="mau3">&quot;circle&quot;</span> <span class="mau2">coords=</span><span class="mau3">&quot;191,57,59&quot;</span> <span class="mau2">href=</span><span class="mau3">&quot;/IMAGE MAP/Cafe.html&quot;</span> <span class="mau2">alt=</span>&quot;CAFE&quot; <span class="mau2">target=</span>&quot;_blank&quot;&gt;
+    &lt;<span class="mau1">area</span> <span class="mau2">shape=</span><span class="mau3">&quot;rect&quot;</span> <span class="mau2">coords=</span><span class="mau3">&quot;131,128,310,223&quot;</span> <span class="mau2">href=</span><span class="mau3">&quot;/IMAGE MAP/Banh Vuong.html&quot;</span> <span class="mau2">alt=</span>&quot;BANH&quot; <span class="mau2">target=</span>&quot;_blank&quot;&gt;
+    &lt;<span class="mau1">area</span> <span class="mau2">shape=</span><span class="mau3">&quot;circle&quot;</span> <span class="mau2">coords=</span><span class="mau3">&quot;87,135,47&quot;</span> <span class="mau2">href=</span><span class="mau3">&quot;/IMAGE MAP/Donat.html&quot;</span> <span class="mau2">alt=</span>&quot;BANH NGOT&quot; <span class="mau2">target=</span>&quot;_blank&quot;&gt;
+&lt;<span class="mau1">/map</span>&gt;</code></pre>
+</div>
+<div>
+<p>Kết quả:</p>
+<img src="/img/BANH.png" alt="banh" usemap="#CAFE" style="width: 350px; height: 250px;">
+<map name="CAFE">
+    <area shape="circle" coords="191,57,59" href="/IMAGE MAP/Cafe.html" alt="CAFE" target="_blank">
+    <area shape="rect" coords="131,128,310,223" href="/IMAGE MAP/Banh Vuong.html" alt="BANH" target="_blank">
+    <area shape="circle" coords="87,135,47" href="/IMAGE MAP/Donat.html" alt="BANH NGOT" target="_blank">
+</map>
+</div>
+<div>
+<p>Giải thích:</p>
+<ul>
+    <li><span class="mau2">usemap=</span>: Trùng với phần tử name trên thẻ &lt;map&gt;</li>
+    <li><span class="mau2">name=</span>: Tên</li>
+    <li><span class="mau2">shape=</span>: Hình dạng của đối tượng vật thẻ
+    <ul>
+        <li><span class="mau1">rect-</span> xác định một vùng hình chữ nhật</li>
+        <li><span class="mau1">circle-</span> xác định một vùng hình tròn</li>
+        <li><span class="mau1">poly-</span> xác định một vùng đa giác</li>
+        <li><span class="mau1">default-</span> xác định toàn bộ khu vực</li>
+    </ul>
+    <li><span class="mau2">coords=</span>: Tọa độ của vật thể. <mark>Rect:</mark> tọa độ được đo ở góc đầu và góc cuối, <mark>Circle:</mark> Tọa độ được đo ở tâm và bán kính, <mark>Poly:</mark> Tọa độ được đo ở nhiều điểm.</li>
+    </li>
+</ul>
+</div>
+<hr>
+<div>
+    <a href="https://www.w3schools.com/html/html_images_imagemap.asp" target="_blank">Xem thêm chi tiết tại đây</a>
+</div>
+</body>
+</html>
