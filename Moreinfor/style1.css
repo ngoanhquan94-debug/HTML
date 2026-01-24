@@ -1,13 +1,17 @@
-.mau1{
-    color: red;
+.mau1 {
+  color: red;
 }
-.mau2{
-    color: green;
+.mau2 {
+  color: green;
 }
-.mau3{
-    color: blue
+.mau3 {
+  color: blue;
 }
-.Trong:empty{
-    width: 100px;
-    height: 100px;
+.Trong:empty {
+  width: 100px;
+  height: 100px;
+}
+.Bang1 {
+  background-color: peru;
+  border-style: 1px solid;
 }
