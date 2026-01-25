@@ -11,7 +11,31 @@
   width: 100px;
   height: 100px;
 }
-.Bang1 {
+td.Bang1,
+tr.Bang1,
+table.Bang1,
+th.Bang1 {
   background-color: peru;
-  border-style: 1px solid;
+  border: 1px solid black;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.Bang2,
+td.Bang2,
+tr.Bang2 {
+  padding: 10px;
+  border-spacing: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+table.Bang3,
+td.Bang3,
+tr.Bang3 th.Bang3 {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+tbody.Bang3,
+tfoot.Bang3 {
+  background-color: green;
+  border-collapse: collapse;
 }
