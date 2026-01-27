@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        table, th,td, tr{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <link rel="stylesheet" href="/Moreinfor/style1.css" />
+    <title>Colgroup</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Table</h1>
+    <div>
+      <table class="Bang1" style="width: 100%">
+        <tr class="Bang1">
+          <th class="Bang1">
+            <a href="/Moreinfor/TABLE/Table border.html">Border</a>
+          </th>
+          <th class="Bang1">
+            <a href="/Moreinfor/TABLE/Table Sizes.html">Sizes</a>
+          </th>
+          <th class="Bang1">
+            <a href="./Headers.html">Headers</a>
+          </th>
+          <th class="Bang1">
+            <a href="./Pading & Spacing.html">Pading & Spacing</a>
+          </th>
+          <th class="Bang1">
+            <a href="/Moreinfor/TABLE/Col&Rowspan.html">Colspan & Rowspan</a>
+          </th>
+          <th class="Bang1"><a href="./Table Styling.html">Styling</a></th>
+          <th class="Bang1">
+            <a href="/Moreinfor/TABLE/Colgroup.html">Colgroup</a>
+          </th>
+        </tr>
+      </table>
+    </div>
+    <h3>Thẻ &lt;colgroup&gt; dùng để định kiểu cho các cột trong bảng.</h3>
+    <div>
+    <p>&lt;colgroup&gt;</p>
+    <p>
+        &lt;col span=&quot;2&quot; style=&quot;background-color:
+        #D6EEEE&quot;&gt;
+    </p>
+    <p>&lt;/colgroup&gt;</p>
+    <p>
+        Thuộc tính này <mark>span</mark> chỉ định số lượng cột được áp dụng kiểu
+        định dạng.
+    </p>
+    <p>
+        Thuộc tính này <mark> style</mark> chỉ định kiểu định dạng cho các cột. Các thuộc tính CSS có thể sử dụng trên Style.
+        <ul>
+            <li>width</li>
+            <li>visibility</li>
+            <li>background</li>
+            <li>border</li>
+        </ul>
+    </p>
+    <p>Nếu muốn chỉnh cho cột giữa thì thẻ Col để không.</p>
+    </div>
+    <div>
+        <p>Example:</p>
+        <table style="width: 100%;">
+            <colgroup>
+                <col span="1" style="background-color: green;">
+                <col span="2">
+                <col span="2" style="background-color: pink">
+        </colgroup>
+        <tr>    
+            <th>MON</th>
+            <th>WED</th>
+            <th>TUE</th>
+            <th>FRI</th>
+            <th>THU</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+        <tr>    
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>    
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
